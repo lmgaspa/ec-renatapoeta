@@ -1,61 +1,43 @@
 export const descriptions = {
-  extase: `
-    A presente coletânea reúne crônicas de dois períodos.<br><br>
-    As primeiras quatro, inéditas, são de outubro e novembro de 2022;<br>
-    as seguintes quatro do período entre 2000 e 2001; e a última, como publicar um livro?                                                                                                                                                                                                                                                                                                          do ano de 2018.<br><br>
-
-    As primeiras têm como ambiência Itabuna e o seu Rio Cachoeira.<br>
-    As últimas, o Sudeste da Bahia, a região do cacau da Bahia e da sua exuberante Mata Atlântica.<br><br>
-
-    Êxtase capta o encantamento de um senhor idoso com seus passarinhos. Emoção em estado puro.<br><br>
-
-    Cachoeira, o rio de minha aldeia é uma homenagem à cidade de Itabuna e ao rio que a corta, como muitos rios cortam outras cidades mundo afora,<br>
-    mas destacando uma singularidade que se repete em cada entardecer.<br>
-    Estabelece um diálogo com Fernando Pessoa e o rio de sua aldeia.<br><br>
-
-    Do culpado e dos tempos de antigamente foca a Internet e seu incomparável e incomensurável potencial construtivo e também destrutivo,
-    bem como o saudosismo do passado idealizado e a saudade da condição de criança diante de uma pitangueira carregada de frutinhas encarnadas.<br><br>
-
-    Como publicar um livro? explora as dificuldades enfrentadas por escritores e editores independentes,<br>
-    especialmente no contexto do interior da Bahia, onde o mercado editorial é ainda mais desafiador.
+  nacasa: `
+   Na Casa das Rimas você vai encontrar palavras e se encantar.<br<br>
+   Observe, imagine  e escreva tudo o que há. A palavras e as cores vão nortear nossa caminhada.<br<br>
+   Então pé na estrada! O que a casa quer mostrar? Rimas e doversão!.<br<br>
+   POR ISSO VENHA COM TODA DISPOSIÇÃO!
   `,
-  regressantes: `
-    Sobre o fenômeno de consumir a vida na grande cidade e, na velhice, retornar, silencioso e anônimo, para próximo do lugar de nascimento.<br>
-    A literatura dá conta de que muitos, em diferentes conjunturas de crise, migraram para regiões economicamente mais promissoras.<br>
-    A propósito, o próprio Sul da Bahia, um dia, constituiu-se em um eldorado para sucessivas levas de sergipanos e de sertanejos do Norte da Bahia.<br><br>
-
-    O fenômeno da migração para fora da região ocorreu, principalmente, nos períodos de grandes adversidades.<br>
-    Para a maior parte dos que labutavam na lavoura de cacau, quer como trabalhadores, quer como pequenos proprietários,<br>
-    a migração, nos tempos difíceis – e esses não foram poucos – é um fato corriqueiro.<br><br>
-
-    Portanto, o novo não é a migração, mas o retorno. Logo, o dado que se pretendeu focar em Regressantes não é propriamente o migrar,<br>
-    mas o retornar à terra natal em condições não tão favoráveis, já na velhice.<br><br>
-
-    Regressantes é, no fundo e em primeiro plano, uma homenagem a esses, ainda que fortes, perdedores,<br>
-    ao menos, na perspectiva de sua afirmação econômica e material.
+  poesia: `
+    Poesia para gente minúscula é uma dessas criações que ficam engavetadas
+    em algum lugar de nós.<br<br>
+    ngana-se quem acha que a intenção deste trabalho é restrito
+    apenas para crianças, pois é permitido aqui ao adulto também se transportar a este lugar glorioso
+    que é o da nossa infância. Tudo aqui reflete um desejo de Incentivo aos leitores deste e de tantos outros livros.
   `,
-  sempre: `
-    A relação entre avós e netos tende a ser boa. Netos surpreendem.<br>
-    Filhos também surpreendem, mas os pais andam, quase sempre, muito ocupados em ganhar a vida para perceberem.<br>
-    Os avós têm mais tempo e podem ver mais e ver melhor.<br><br>
+  antologia: `
+    Esta coletânea de poesias inaugura o projeto abxz Caminho das Pedras, com inserções regionais ou temáticas.<br<br>
+    Ainda que tenha um Norte, pretende ser um projeto aberto
+    ao aprendizado, tendo como fulcro a expressão da condição humana,
+    através da palavra escrita, em seu amplo leque de gêneros literários.<br><br>
+    Se pudéssemos resumi-lo, poderíamos dizer que existe para que nenhum talento literário se perca por falta de 
+    portunidade, para que a riqueza literária não fique prisioneira de gavetas fechadas,
+    tampouco esquecida em mentes com prazo de validade – antes que esse prazo se exaura, que a experiência,
+    a vivência e a sensibilidade venham a público informar, iluminar e orientar os passos que estão sendo dados
+    por pés titubeantes face às incertezas, inseguranças e temores dos tempos de hoje.<br><br>
+    Tempos de insuspeitáveis, profundas e inimagináveis mudanças.
 
-    As histórias de “Para sempre felizes!” contam episódios reais, vivenciados
-    com meu neto.<br><br>
-    São episódios que, com variantes, muitos avós vivenciaram e vivenciam.<br>
-    Os pais, em sua pressa, quase sempre passam batidos.<br><br>
-    E, quando notam, anos já se passaram e os filhos já cresceram.
+    O presente está prenhe de possibilidades e de ameaças.<br<br>
+    Os novos caminhos que o futuro sinaliza precisam da luz dos que já percorreram longas jornadas e têm palavras a dizer.
   `,
-  versos: `
-  O livro reúne dois conjuntos de poesias.  O primeiro, Versos Desnudos e o segundo,Poemas em Tempos Tensos.<br><br>
-  O primeiro consiste em poemas sintéticos, sem adjetivações, franciscanos, minimalistas, em que o sentido e a estética emergem a partir de um sequenciamento de vocábulos.<br><br>
-  Esses versos, resumidos como desnudos, apresentam dois formatos:<br><br>
-  Em um formato estão poemas com dois blocos de sete versos cada e, um segundo formato, composto por cinco poemas com cinco blocos de 18 versos cada.<br><br>
-  E, no final, cinco poemas convencionais, Poemas em Tempos Tensos, que têm na tensão geopolítica do presente e na insensatez da Humanidade seu foco principal.
+  gatomasia: `
+    Gatomasia! Que história é essa de Gatomasia?<br<br>
+
+    Neste livro, o gato Arnaldo faz uma Gatomasia!<br<br>
+    Isso mesmo!<br<br>
+
+    Misturando palavras formadas de outras existentes para
+    compor sua poesia, um gato resolve espalhar palavras com maestria!
+
+    Convidamos você, leitora e leitor, a se arriscar num universo de
+    fantasias incentivando, através dos textos, o encantamento pela leitura.<br<br>
+    Então vamos compor sua expressão preferida criando laços, explorando e aventurando-se?
   `,
-  versi: `
-  Il libro riunisce due raccolte di poesie. La prima, “Versi Spogli”, e la seconda, “Poems in Tempi Difficili”.<br><br>
-  La prima raccolta è composta da poesie sintetiche, prive di aggettivi, minimaliste, in cui significato ed estetica emergono da una sequenza di parole.<br><br>
-  Questi versi, riassunti come “spogli”, sono disponibili in due formati: un formato presenta poesie con due blocchi di sette versi ciascuno e un secondo formato è composto da cinque poesie con cinque blocchi di 18 versi ciascuno.<br><br>
-  E, infine, cinque poesie convenzionali, “Poesie in Tempi Difficili”, il cui obiettivo principale è la tensione geopolitica del presente e la follia dell’umanità.
-  `
 };

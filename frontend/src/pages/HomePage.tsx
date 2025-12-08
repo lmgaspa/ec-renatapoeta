@@ -10,9 +10,10 @@ function HomePage() {
     <>
       <Container>
         <ContentBlock
-          title="Agenor Gasparetto"
-          imageUrl="/images/agenor.webp"
-          description="Possui graduação em Ciências Sociais pela Pontifícia Universidade Católica do Rio Grande do Sul (1982) e mestrado em Sociologia Rural pela Universidade Federal do Rio Grande do Sul (1985). Atualmente é Professor Adjunto da Universidade Estadual de Santa Cruz, Empresário do Sócio Estatística Pesquisa Consultoria Ltda e Sócio Diretor da Via Litterarum Editora. Atuando principalmente nos seguintes temas: mobilidade social lavoura cacaueira Bahia."
+          title="Renata Poeta"
+          imageUrl="/images/renatapoeta.webp"
+          description="Renata Nascimento dos Reis (Renata Poeta) nasceu em Ribeira do Pombal – BA Desde criança, adora poesias e sempre sonhou em ser escritora.
+            Hoje, licenciada em Letras (Faculdade Dom Luiz de Orleans e Bragança) e especialista em Produção textual, Gramática e Literatura (Faculdade Regional de Filosofia, Ciências e letras de Candeias) faz uma das coisas que mais gosta: ensinar Língua Portuguesa. Autora dos livros Outra forma de ver e sentir e Poesias para gente minúscula (Mondrongo) tem se dedicado cada vez mais à literatura infanto- juvenil."
           isAuthor
         />
 
@@ -21,39 +22,32 @@ function HomePage() {
         </h2>
 
         <div className="flex flex-wrap justify-center gap-16">
-          <div onClick={() => navigate("/books/extase")}>
+          <div onClick={() => navigate("/books/nacasa")}>
             <ContentBlock
-              title="Êxtase"
-              imageUrl="/images/extase.webp"
-              description="De birra com Jorge Amado e outras crônicas grapiúnas."
+              title="Na casa das rimas"
+              imageUrl="/images/nacasa.webp"
+              description="Na casa das rimas"
             />
           </div>
-          <div onClick={() => navigate("/books/sempre")}>
+          <div onClick={() => navigate("/books/poesia")}>
             <ContentBlock
-              title="Para Sempre Felizes"
-              imageUrl="/images/sempre.webp"
-              description="Coisas de neto."
+              title="Poesia para gente minúscula"
+              imageUrl="/images/poesia.webp"
+              description="Poesia para gente minúscula"
             />
           </div>
-          <div onClick={() => navigate("/books/regressantes")}>
+          <div onClick={() => navigate("/books/antologia")}>
             <ContentBlock
-              title="Regressantes"
-              imageUrl="/images/regressantes.webp"
-              description="Histórias de luta e resistência."
+              title="Antologia Via Vale dos Poetas."
+              imageUrl="/images/viavale.webp"
+              description="Antologia Via Vale dos Poetas."
             />
           </div>
-          <div onClick={() => navigate("/books/versos")}>
+          <div onClick={() => navigate("/books/gatomasia")}>
             <ContentBlock
-              title="Versos desnudos: poemas em tempos tensos"
-              imageUrl="/images/versos.webp"
-              description="Versos desnudos: poemas em tempos tensos."
-            />
-          </div>
-          <div onClick={() => navigate("/books/versi")}>
-            <ContentBlock
-              title="Versi spogli: poesie in tempi difficili"
-              imageUrl="/images/versi.webp"
-              description="Versi spogli: poesie in tempi difficili."
+              title="Gatomasia"
+              imageUrl="/images/gatomasia.webp"
+              description="Gatomasia! Que história é essa de Gatomasia? Gatomasia! Que história é essa de Gatomasia?"
             />
           </div>
         </div>

@@ -13,109 +13,89 @@ export interface Book {
   relatedBooks?: { title: string; imageUrl: string; price: string; category: string; id: string }[];
 }
 
-const agenorGasparetto = "Agenor Gasparetto";
+const poetaRenata = "Renata Poeta";
 const selo = "Via Litterarum";
 const idioma = "Português";
 
 export const books: Book[] = [
   {
-    id: "extase",
-    title: "Êxtase, de birra com Jorge Amado e outras crônicas grapiúnas",
-    imageUrl: "/images/extase.webp",
-    price: "R$30,00",
-    description: descriptions.extase,
-    author: agenorGasparetto,
+    id: "nacasa",
+    title: "Na casa das rimas",
+    imageUrl: "/images/nacasa.webp",
+    price: "R$20,00",
+    description: descriptions.nacasa,
+    author: poetaRenata,
     additionalInfo: {
-      Peso: "110 g",
-      Dimensões: "13,5 × 19,5 × 1 cm",
+      Peso: "100 g",
+      Dimensões: "21 × 29,5 × 1 cm",
       Selo: selo,
-      ISBN: "978-65-86676-72-3",
+      ISBN: "978-85-8151-184-9",
       Edição: "1ª",
-      "Ano de Publicação": "2023",
-      "Nº de Páginas": "52",
+      "Ano de Publicação": "2019",
+      "Nº de Páginas": "22",
       Idioma: idioma
     },
-    category: "Crônicas",
+    category: "Literatura infanto-juvenil.",
     stock: 100
   },
   {
-    id: "regressantes",
-    title: "Regressantes",
-    imageUrl: "/images/regressantes.webp",
-    price: "R$30,00",
-    description: descriptions.regressantes,
-    author: agenorGasparetto,
+    id: "poesia",
+    title: "Poesia para gente minúscula",
+    imageUrl: "/images/poesia.webp",
+    price: "R$20,00",
+    description: descriptions.poesia,
+    author: poetaRenata,
     additionalInfo: {
       Peso: "200 g",
-      Dimensões: "21 × 14 × 1 cm",
+      Dimensões: "20 × 28 × 1 cm",
       Selo: selo,
-      ISBN: "978-85-8151-019-4",
-      Edição: "2ª",
-      "Ano de Publicação": "2012",
-      "Nº de Páginas": "142",
-      Idioma: idioma
-    },
-    category: "Contos",
-    stock: 100
-  },
-  {
-    id: "sempre",
-    title: "Para sempre felizes: coisas de neto",
-    imageUrl: "/images/sempre.webp",
-    price: "R$20,00",
-    description: descriptions.sempre,
-    author: agenorGasparetto,
-    additionalInfo: {
-      Peso: "60 g",
-      Dimensões: "28 × 20,5 × 1 cm",
-      Selo: selo,
-      ISBN: "978-85-8151-035-4",
+      ISBN: "978-85-8151-180-8",
       Edição: "1ª",
-      "Ano de Publicação": "2013",
-      "Nº de Páginas": "20",
+      "Ano de Publicação": "2018",
+      "Nº de Páginas": "28",
       Idioma: idioma
     },
-    category: "Infantojuvenil",
+    category: "Literatura infanto-juvenil.",
     stock: 100
   },
   {
-    id: "versos",
-    title: "Versos Desnudos, Poemas em tempo Tensos",
-    imageUrl: "/images/versos.webp",
-    price: "R$20,00",
-    description: descriptions.versos,
-    author: agenorGasparetto,
-    additionalInfo: {
-      Peso: "100 g",
-      Dimensões: "11 × 21 × 1 cm",
-      Selo: selo,
-      ISBN: "978-85-8151-300-3",
-      Edição: "1ª",
-      "Ano de Publicação": "2025",
-      "Nº de Páginas": "80",
-      Idioma: idioma
-    },
-    category: "Poemas",
-    stock: 100
-  },
-  {
-    id: "versi",
-    title: "Versi spogli: poesie in tempi difficili",
-    imageUrl: "/images/versi.webp",
+    id: "antologia",
+    title: "Antologia Via Vale dos Poetas",
+    imageUrl: "/images/viavale.webp",
     price: "R$30,00",
-    description: descriptions.versi,
-    author: agenorGasparetto,
+    description: descriptions.antologia,
+    author: poetaRenata,
     additionalInfo: {
-      Peso: "100 g",
-      Dimensões: "11 × 21 × 1 cm",
+      Peso: "230 g",
+      Dimensões: "15 × 22 × 1 cm",
       Selo: selo,
-      ISBN: "978-85-8151-306-5",
+      ISBN: "978-65-86676-37-2",
       Edição: "1ª",
-      "Ano de Publicação": "2025",
-      "Nº de Páginas": "80",
+      "Ano de Publicação": "2021",
+      "Nº de Páginas": "132",
       Idioma: idioma
     },
-    category: "Poemas",
+    category: "Literatura infanto-juvenil.",
+    stock: 0
+  },
+  {
+    id: "gatomasia",
+    title: "Gatomasia",
+    imageUrl: "/images/gatomasia.webp",
+    price: "R$30,00",
+    description: descriptions.gatomasia,
+    author: poetaRenata,
+    additionalInfo: {
+      Peso: "100 g",
+      Dimensões: "20 × 28 × 1 cm",
+      Selo: selo,
+      ISBN: "978-85-8151-180-8",
+      Edição: "1ª",
+      "Ano de Publicação": "2023",
+      "Nº de Páginas": "24",
+      Idioma: idioma
+    },
+    category: "Literatura infanto-juvenil.Literatura infanto-juvenil.",
     stock: 100
-  }
+  },
 ];
