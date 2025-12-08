@@ -1,8 +1,8 @@
-\# 📚 Ecommerce AG Books — Fullstack
+\# 📚 Ecommerce Renata Poeta Books — Fullstack
 
 
 
-Full-stack services for the \*\*AG Books\*\* online store.
+Full-stack services for the \*\*Renata Poeta Books\*\* online store.
 
 
 
@@ -236,3 +236,4 @@ https://ecommerceag-6fa0e6a5edbf.herokuapp.com/swagger-ui/index.html
 
 
 
+# ec-renatapoeta
