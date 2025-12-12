@@ -13,15 +13,15 @@ function SupportPage() {
           entrar em contato com <strong>Renata Poeta</strong>.
         </p>
         <p className="mt-6">
-          <strong>WhatsApp:</strong> (75) 9852-2299
+          <strong>WhatsApp:</strong> (75) 99852-2299
         </p>
         <p>
           <strong>Email:</strong>{' '}
           <a 
-            href="mailto:ag1957@gmail.com" 
+            href="mailto:renatapoeta12@gmail.com" 
             className="text-primary hover:underline"
           >
-            ag1957@gmail.com
+            renatapoeta12@gmail.com
           </a>
         </p>
       </div>

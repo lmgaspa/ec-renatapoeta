@@ -11,7 +11,7 @@ function HomePage() {
       <Container>
         <ContentBlock
           title="Renata Poeta"
-          imageUrl="/images/renatapoeta.webp"
+          imageUrl="/images/renata.webp"
           description="Renata Nascimento dos Reis (Renata Poeta) nasceu em Ribeira do Pombal – BA Desde criança, adora poesias e sempre sonhou em ser escritora.
             Hoje, licenciada em Letras (Faculdade Dom Luiz de Orleans e Bragança) e especialista em Produção textual, Gramática e Literatura (Faculdade Regional de Filosofia, Ciências e letras de Candeias) faz uma das coisas que mais gosta: ensinar Língua Portuguesa. Autora dos livros Outra forma de ver e sentir e Poesias para gente minúscula (Mondrongo) tem se dedicado cada vez mais à literatura infanto- juvenil."
           isAuthor
@@ -48,6 +48,13 @@ function HomePage() {
               title="Gatomasia"
               imageUrl="/images/gatomasia.webp"
               description="Gatomasia! Que história é essa de Gatomasia? Gatomasia! Que história é essa de Gatomasia?"
+            />
+          </div>
+          <div onClick={() => navigate("/books/poemar")}>
+            <ContentBlock
+              title="Poemar"
+              imageUrl="/images/poemar.webp"
+              description="Para  crianças que moram longe do mar"
             />
           </div>
         </div>

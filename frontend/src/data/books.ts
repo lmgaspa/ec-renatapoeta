@@ -98,4 +98,24 @@ export const books: Book[] = [
     category: "Literatura infanto-juvenil.Literatura infanto-juvenil.",
     stock: 100
   },
+  {
+    id: "poemar",
+    title: "Poemar",
+    imageUrl: "/images/poemar.webp",
+    price: "R$40,00",
+    description: descriptions.poemar,
+    author: poetaRenata,
+    additionalInfo: {
+      Peso: "30 g",
+      Dimensões: "20 × 20 × 1 cm",
+      Selo: selo,
+      ISBN: "978-85-8151-309-6",
+      Edição: "1ª",
+      "Ano de Publicação": "2025",
+      "Nº de Páginas": "24",
+      Idioma: idioma
+    },
+    category: "Literatura infanto-juvenil.Literatura infanto-juvenil.",
+    stock: 100
+  },
 ];

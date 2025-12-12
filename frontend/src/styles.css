@@ -6,9 +6,12 @@
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* Tema infantil – cores candy/pastel */
-  --color-primary: oklch(0.55 0.10 230);   /* azul mais escuro, ainda suave */
-  --color-secondary: oklch(0.88 0.10 350); /* rosa candy */
-  --color-accent: oklch(0.93 0.09 95);     /* amarelo sol suave */
+  --color-primary: oklch(0.55 0.10 230);
+  /* azul mais escuro, ainda suave */
+  --color-secondary: oklch(0.88 0.10 350);
+  /* rosa candy */
+  --color-accent: oklch(0.93 0.09 95);
+  /* amarelo sol suave */
 
   --color-background: oklch(0.99 0.02 95);
   --color-background2: oklch(0.96 0.03 110);
