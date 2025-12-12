@@ -255,5 +255,5 @@ flyway {
 
 // ====== BootJar com nome previsível ======
 tasks.named<BootJar>("bootJar") {
-    archiveBaseName.set("ecommerceag-backend")
+    archiveBaseName.set("ec-renata-backend")
 }
