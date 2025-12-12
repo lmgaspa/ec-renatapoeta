@@ -95,7 +95,7 @@ export const books: Book[] = [
       "Nº de Páginas": "24",
       Idioma: idioma
     },
-    category: "Literatura infanto-juvenil.Literatura infanto-juvenil.",
+    category: "Literatura infanto-juvenil.",
     stock: 100
   },
   {
@@ -115,7 +115,7 @@ export const books: Book[] = [
       "Nº de Páginas": "24",
       Idioma: idioma
     },
-    category: "Literatura infanto-juvenil.Literatura infanto-juvenil.",
+    category: "Literatura infanto-juvenil.",
     stock: 100
   },
 ];
