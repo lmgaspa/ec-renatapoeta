@@ -65,3 +65,9 @@ env-dev.ps1
 *.sh.local
 
 src/main/resources/application-heroku.yml
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# Arquivo lixo acidental
+tatus
