@@ -17,7 +17,7 @@ abstract class PixEmailBase(
     protected val mailSender: JavaMailSender,
     protected val bookService: BookService,
     @Value("\${email.author}") val authorEmail: String,
-    @Value("\${application.brand.name:Agenor Gasparetto - E-Commerce}") protected val brandName: String,
+    @Value("\${application.brand.name:Renata Poeta - E-Commerce}") protected val brandName: String,
     @Value("\${mail.from:}") protected val configuredFrom: String,
     @Value("\${mail.logo.url:https://www.andescoresoftware.com.br/AndesCore.jpg}") protected val logoUrl: String
 ) {
@@ -84,7 +84,7 @@ abstract class PixEmailBase(
                     <td><img src="$img" alt="${escapeHtml(it.title)}" width="70" style="border-radius:8px;vertical-align:middle;margin-right:12px"></td>
                     <td style="padding-left:12px">
                       <div style="font-weight:600">${escapeHtml(it.title)}</div>
-                      <div style="color:#555;font-size:12px">${it.quantity}× — R$ ${"%.2f".format(it.price.toDouble())}</div>
+                      <div style="color:#555;font-size:14px">${it.quantity}× — R$ ${"%.2f".format(it.price.toDouble())}</div>
                     </td>
                   </tr>
                 </table>
@@ -116,8 +116,8 @@ abstract class PixEmailBase(
         return """
             <p style="margin:16px 0 0;color:#555">
               Em caso de dúvida, fale com a <strong>$brandName</strong><br>
-              ✉️ Email: <a href="mailto:ag1957@gmail.com">ag1957@gmail.com</a> · 
-              💬 WhatsApp: <a href="https://wa.me/5571994105740">(71) 99410-5740</a>
+              ✉️ Email: <a href="mailto:renatapoeta12@gmail.com">renatapoeta12@gmail.com</a> · 
+              💬 WhatsApp: <a href="https://wa.me/557598522299">(75) 99852-2299</a>
             </p>
         """.trimIndent()
     }

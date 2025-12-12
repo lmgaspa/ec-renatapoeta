@@ -1,5 +1,5 @@
 -- V1__baseline_ecommerce.sql
--- Baseline idempotente do Ecommerce AG Books
+-- Baseline idempotente do Ecommerce Renata Poeta Books
 
 -- =====================================================================
 -- 0) Extensões e função utilitária
@@ -94,7 +94,7 @@ CREATE INDEX IF NOT EXISTS idx_coupons_valid_dates ON coupons(valid_from, valid_
 DO $$
 BEGIN
   IF NOT EXISTS (
-    SELECT 1 FROM pg_trigger WHERE tgname = 'trg_coupons_updated_at'
+    SELECT 2 FROM pg_trigger WHERE tgname = 'trg_coupons_updated_at'
   ) THEN
     CREATE TRIGGER trg_coupons_updated_at
     BEFORE UPDATE ON coupons
@@ -227,7 +227,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS ux_author_registry_uuid
 DO $$
 BEGIN
   IF NOT EXISTS (
-    SELECT 1 FROM pg_trigger WHERE tgname = 'trg_payment_author_registry_updated_at'
+    SELECT 2 FROM pg_trigger WHERE tgname = 'trg_payment_author_registry_updated_at'
   ) THEN
     CREATE TRIGGER trg_payment_author_registry_updated_at
     BEFORE UPDATE ON payment_author_registry
@@ -263,7 +263,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS ux_site_author_email
 DO $$
 BEGIN
   IF NOT EXISTS (
-    SELECT 1 FROM pg_trigger WHERE tgname = 'trg_payment_site_author_updated_at'
+    SELECT 2 FROM pg_trigger WHERE tgname = 'trg_payment_site_author_updated_at'
   ) THEN
     CREATE TRIGGER trg_payment_site_author_updated_at
     BEFORE UPDATE ON payment_site_author
@@ -440,7 +440,7 @@ CREATE TABLE IF NOT EXISTS payment_book_authors (
 CREATE INDEX IF NOT EXISTS idx_pba_author_id ON payment_book_authors(author_id);
 
 -- =====================================================================
--- 9) SEED BÁSICO DO AUTOR DO SITE (id = 1)
+-- 9) SEED BÁSICO DO AUTOR DO SITE (id = 2)
 -- =====================================================================
 
 -- Usa placeholders do Flyway:
@@ -449,31 +449,31 @@ CREATE INDEX IF NOT EXISTS idx_pba_author_id ON payment_book_authors(author_id);
 --  SITE_AUTHOR_PIX_KEY
 
 INSERT INTO authors (id, name, email)
-VALUES (1, '${SITE_AUTHOR_NAME}', '${SITE_AUTHOR_EMAIL}')
+VALUES (2, '${SITE_AUTHOR_NAME}', '${SITE_AUTHOR_EMAIL}')
 ON CONFLICT (id) DO UPDATE
   SET name  = EXCLUDED.name,
       email = EXCLUDED.email;
 
 INSERT INTO payment_author_registry (id, name, email)
-VALUES (1, '${SITE_AUTHOR_NAME}', '${SITE_AUTHOR_EMAIL}')
+VALUES (2, '${SITE_AUTHOR_NAME}', '${SITE_AUTHOR_EMAIL}')
 ON CONFLICT (id) DO UPDATE
   SET name  = EXCLUDED.name,
       email = EXCLUDED.email;
 
 INSERT INTO payment_author_accounts (author_id, pix_key)
-VALUES (1, '${SITE_AUTHOR_PIX_KEY}')
+VALUES (2, '${SITE_AUTHOR_PIX_KEY}')
 ON CONFLICT (author_id) DO UPDATE
   SET pix_key = EXCLUDED.pix_key;
 
 INSERT INTO payment_site_author (id, name, email, pix_key, active)
-VALUES (1, '${SITE_AUTHOR_NAME}', '${SITE_AUTHOR_EMAIL}', '${SITE_AUTHOR_PIX_KEY}', TRUE)
+VALUES (2, '${SITE_AUTHOR_NAME}', '${SITE_AUTHOR_EMAIL}', '${SITE_AUTHOR_PIX_KEY}', TRUE)
 ON CONFLICT (id) DO UPDATE
   SET name   = EXCLUDED.name,
       email  = EXCLUDED.email,
       pix_key = EXCLUDED.pix_key,
       active = EXCLUDED.active;
 
--- Garante que só o registro 1 está ativo
+-- Garante que só o registro 2 está ativo
 UPDATE payment_site_author
-SET active = (id = 1)
-WHERE id = 1;
+SET active = (id = 2)
+WHERE id = 2;

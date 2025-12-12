@@ -19,7 +19,7 @@ class OrderFailedEmailSender(
     bookService: BookService,
     orderEmailRepository: OrderEmailRepository,
     @Value("\${email.author}") authorEmail: String,
-    @Value("\${application.brand.name:Agenor Gasparetto - E-Commerce}") brandName: String,
+    @Value("\${application.brand.name:Renata Poeta - E-Commerce}") brandName: String,
     @Value("\${mail.from:}") configuredFrom: String,
     @Value("\${mail.logo.url:https://www.andescoresoftware.com.br/AndesCore.jpg}") logoUrl: String
 ) : OrderStatusEmailBase(mailSender, bookService, orderEmailRepository, authorEmail, brandName, configuredFrom, logoUrl) {
@@ -80,7 +80,7 @@ class OrderFailedEmailSender(
 
         return """
         <html>
-        <body style="font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;padding:24px">
+        <body style="font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;padding:24px;font-size:14px">
           <div style="max-width:640px;margin:0 auto;background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden">
 
             <!-- HEADER -->
@@ -91,9 +91,9 @@ class OrderFailedEmailSender(
                     <img src="$logoUrl" alt="${escapeHtml(brandName)}" width="56" style="display:block;border-radius:6px;">
                   </td>
                   <td style="text-align:right;vertical-align:middle;">
-                    <div style="font-weight:700;font-size:18px;line-height:1;">${escapeHtml(brandName)}</div>
+                    <div style="font-weight:700;font-size:14px;line-height:1;">${escapeHtml(brandName)}</div>
                     <div style="height:6px;line-height:6px;font-size:0;">&nbsp;</div>
-                    <div style="opacity:.9;font-size:12px;line-height:1.2;">Pagamento não aprovado</div>
+                    <div style="opacity:.9;font-size:14px;line-height:1.2;">Pagamento não aprovado</div>
                   </td>
                 </tr>
               </table>
@@ -106,13 +106,13 @@ class OrderFailedEmailSender(
 
               $couponBlock
 
-              <h3 style="font-size:15px;margin:16px 0 8px">🛒 Itens do pedido</h3>
+              <h3 style="font-size:14px;margin:16px 0 8px">🛒 Itens do pedido</h3>
               <table width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
                 $itemsHtml
               </table>
 
               <div style="margin-top:14px">
-                <p style="margin:4px 0;font-size:16px">💰 <strong>Total:</strong> $total</p>
+                <p style="margin:4px 0;font-size:14px">💰 <strong>Total:</strong> $total</p>
                 <p style="margin:4px 0">💳 <strong>Método de pagamento:</strong> $paymentMethod</p>
               </div>
 
