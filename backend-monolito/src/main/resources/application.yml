@@ -92,7 +92,7 @@ efi:
     client-id: ${EFI_CLIENT_ID}
     client-secret: ${EFI_CLIENT_SECRET}
     chave: ${EFI_PIX_KEY}
-    cert-path: classpath:producao-ec-renatapoeta.p12
+    cert-path: classpath:pro-ecommerce.p12
     cert-password: ""      # preencha se houver senha
     sandbox: false
     payout:

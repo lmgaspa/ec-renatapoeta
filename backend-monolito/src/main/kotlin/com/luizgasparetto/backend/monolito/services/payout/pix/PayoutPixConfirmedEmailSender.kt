@@ -26,7 +26,7 @@ class PayoutPixConfirmedEmailSender(
         payoutProps: EfiPixPayoutProps,
         private val payoutEmailRepository: PayoutEmailRepository,
         @Value("\${email.author}") authorEmail: String,
-        @Value("\${application.brand.name:Agenor Gasparetto - E-Commerce}") brandName: String,
+        @Value("\${application.brand.name:Renata Poeta - E-Commerce}") brandName: String,
         @Value("\${mail.from:}") configuredFrom: String,
         @Value("\${mail.logo.url:https://www.andescoresoftware.com.br/AndesCore.jpg}")
         logoUrl: String,
@@ -187,7 +187,7 @@ class PayoutPixConfirmedEmailSender(
 
         return """
         <html>
-        <body style="font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;padding:24px">
+        <body style="font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;padding:24px;font-size:14px">
           <div style="max-width:640px;margin:0 auto;background:#fff;border:1px solid:#eee;border-radius:12px;overflow:hidden">
 
             ${buildHeader("Repasse PIX confirmado")}

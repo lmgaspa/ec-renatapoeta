@@ -13,8 +13,8 @@ class CorsConfig {
             // 1) SSE
             registry.addMapping("/api/v1/orders/**")
                 .allowedOriginPatterns(
-                    "https://www.agenorgasparetto.com.br",
-                    "https://agenorgasparetto.com.br",
+                    "https://www.renatapoeta.com.br",
+                    "https://renatapoeta.com.br",
                     "http://localhost:5173",
                     "http://localhost:5174",
                     "http://localhost:5175"
@@ -28,8 +28,8 @@ class CorsConfig {
             // 2) Privacy (expor Set-Cookie, sem credentials)
             registry.addMapping("/api/v1/privacy/**")
                 .allowedOriginPatterns(
-                    "https://www.agenorgasparetto.com.br",
-                    "https://agenorgasparetto.com.br",
+                    "https://www.renatapoeta.com.br",
+                    "https://renatapoeta.com.br",
                     "http://localhost:5173",
                     "http://localhost:5174",
                     "http://localhost:5175"
@@ -43,8 +43,8 @@ class CorsConfig {
             // 3) REST genérico
             registry.addMapping("/api/v1/**")
                 .allowedOriginPatterns(
-                    "https://www.agenorgasparetto.com.br",
-                    "https://agenorgasparetto.com.br",
+                    "https://www.renatapoeta.com.br",
+                    "https://renatapoeta.com.br",
                     "http://localhost:5173",
                     "http://localhost:5174",
                     "http://localhost:5175"

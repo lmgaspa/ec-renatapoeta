@@ -12,7 +12,7 @@ class OpenApiConfig {
     fun customOpenAPI(): OpenAPI =
         OpenAPI().info(
             Info()
-                .title("Agenor Gasparetto – Ecommerce API")
+                .title("Renata Poeta – Ecommerce API")
                 .version("v1")
                 .description("Endpoints do checkout Pix, cartão de crédito, webhook e catálogo")
         )

@@ -24,7 +24,7 @@ class PayoutCardScheduledEmailSender(
     jdbc: NamedParameterJdbcTemplate,
     payoutProps: EfiCardPayoutProps,
     @Value("\${email.author}") authorEmail: String,
-    @Value("\${application.brand.name:Agenor Gasparetto - E-Commerce}") brandName: String,
+    @Value("\${application.brand.name:Renata Poeta - E-Commerce}") brandName: String,
     @Value("\${mail.from:}") configuredFrom: String,
     @Value("\${mail.logo.url:https://www.andescoresoftware.com.br/AndesCore.jpg}") logoUrl: String,
     @Value("\${application.timezone:America/Bahia}") appTz: String,
@@ -134,7 +134,7 @@ class PayoutCardScheduledEmailSender(
 
         return """
         <html>
-        <body style="font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;padding:24px">
+        <body style="font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;padding:24px;font-size:14px">
           <div style="max-width:640px;margin:0 auto;background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden">
 
             <!-- HEADER -->
@@ -145,9 +145,9 @@ class PayoutCardScheduledEmailSender(
                     <img src="$logoUrl" alt="${escape(brandName)}" width="56" style="display:block;border-radius:6px;">
                   </td>
                   <td style="text-align:right;vertical-align:middle;">
-                    <div style="font-weight:700;font-size:18px;line-height:1;">${escape(brandName)}</div>
+                    <div style="font-weight:700;font-size:14px;line-height:1;">${escape(brandName)}</div>
                     <div style="height:6px;line-height:6px;font-size:0;">&nbsp;</div>
-                    <div style="opacity:.9;font-size:12px;line-height:1.2;">Repasse de Cartão programado</div>
+                    <div style="opacity:.9;font-size:14px;line-height:1.2;">Repasse de Cartão programado</div>
                   </td>
                 </tr>
               </table>
@@ -177,8 +177,8 @@ class PayoutCardScheduledEmailSender(
 
               <p style="margin:16px 0 0;color:#555">
                 Dúvidas? Fale com a <strong>${escape(brandName)}</strong><br>
-                ✉️ <a href="mailto:ag1957@gmail.com">ag1957@gmail.com</a> ·
-                💬 <a href="https://wa.me/5571994105740">(71) 99410-5740</a>
+                ✉️ <a href="mailto:renatapoeta12@gmail.com">renatapoeta12@gmail.com</a> ·
+                💬 <a href="https://wa.me/557598522299">(75) 99852-2299</a>
               </p>
             </div>
 

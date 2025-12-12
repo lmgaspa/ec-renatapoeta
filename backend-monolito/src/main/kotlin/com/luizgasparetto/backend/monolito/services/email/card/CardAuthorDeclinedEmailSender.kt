@@ -14,7 +14,7 @@ class CardAuthorDeclinedEmailSender(
     mailSender: JavaMailSender,
     bookService: BookService,
     @Value("\${email.author}") authorEmail: String,
-    @Value("\${application.brand.name:Agenor Gasparetto - E-Commerce}") brandName: String,
+    @Value("\${application.brand.name:Renata Poeta - E-Commerce}") brandName: String,
     @Value("\${mail.from:}") configuredFrom: String,
     @Value("\${mail.logo.url:https://www.andescoresoftware.com.br/AndesCore.jpg}") logoUrl: String
 ) : CardEmailBase(mailSender, bookService, authorEmail, brandName, configuredFrom, logoUrl) {
@@ -50,7 +50,7 @@ class CardAuthorDeclinedEmailSender(
 
         return """
         <html>
-        <body style="font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;padding:24px">
+        <body style="font-family:Arial,Helvetica,sans-serif;background:#f6f7f9;padding:24px;font-size:14px">
           <div style="max-width:640px;margin:0 auto;background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden">
 
             <!-- HEADER -->
@@ -61,9 +61,9 @@ class CardAuthorDeclinedEmailSender(
                     <img src="$logoUrl" alt="${escapeHtml(brandName)}" width="56" style="display:block;border-radius:6px;">
                   </td>
                   <td style="text-align:right;vertical-align:middle;">
-                    <div style="font-weight:700;font-size:18px;line-height:1;">${escapeHtml(brandName)}</div>
+                    <div style="font-weight:700;font-size:14px;line-height:1;">${escapeHtml(brandName)}</div>
                     <div style="height:6px;line-height:6px;font-size:0;">&nbsp;</div>
-                    <div style="opacity:.9;font-size:12px;line-height:1.2;">Pedido recusado no cartão</div>
+                    <div style="opacity:.9;font-size:14px;line-height:1.2;">Pedido recusado no cartão</div>
                   </td>
                 </tr>
               </table>
