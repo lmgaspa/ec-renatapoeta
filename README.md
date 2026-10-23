@@ -1,6 +1,6 @@
 # 📚 Ecommerce AG Books — Fullstack
 
-Full-stack services for the **AG Books** online store.
+Full-stack services for the **Renata Poeta Books** online store.
 
 ## 🎯 Feature Overview
 
